@@ -7,21 +7,34 @@
 //
 
 #import "ViewController.h"
+#import "HomeController.h"
 
-@interface ViewController ()
+
+
+
+@interface ViewController()
+
+@property (nonatomic, strong)BREWHomeController *homeController;
+
+@property (nonatomic) BOOL isVisible;
 
 @end
 
+
+
+
+
+
+
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (!self.isVisible) {
+        self.isVisible = YES;
+        [self.homeViewController show];
+    }
 }
 
 @end
