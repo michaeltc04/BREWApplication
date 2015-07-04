@@ -6,27 +6,23 @@
 //  Copyright (c) 2015 Michael Carr. All rights reserved.
 //
 
+
 #import "ViewController.h"
 #import "HomeController.h"
 
 
-
-
 @interface ViewController()
 
-@property (nonatomic, strong)BREWHomeController *homeController;
 
+@property (nonatomic, strong)BREWHomeController *homeController;
 @property (nonatomic) BOOL isVisible;
+
 
 @end
 
 
-
-// test
-
-
-
 @implementation ViewController
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -36,5 +32,6 @@
         [self.homeViewController show];
     }
 }
+
 
 @end

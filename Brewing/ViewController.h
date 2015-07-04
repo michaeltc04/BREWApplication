@@ -6,9 +6,12 @@
 //  Copyright (c) 2015 Michael Carr. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 
+
 @protocol ViewControllerDelegate <NSObject>
+
 
 //delegate methods
 //- (void)viewController:(ViewController *)viewController
@@ -21,9 +24,12 @@
 
 @end
 
+
 @interface ViewController : UIViewController
 
+
 //method declarations
+
 
 @end
 

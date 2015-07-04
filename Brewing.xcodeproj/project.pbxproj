@@ -15,6 +15,7 @@
 		277C716F1B4781B1009618E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277C716E1B4781B1009618E5 /* Images.xcassets */; };
 		277C71721B4781B1009618E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277C71701B4781B1009618E5 /* LaunchScreen.xib */; };
 		277C717E1B4781B1009618E5 /* BrewingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277C717D1B4781B1009618E5 /* BrewingTests.m */; };
+		277C71891B47918A009618E5 /* BREWHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277C71881B47918A009618E5 /* BREWHomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		277C71771B4781B1009618E5 /* BrewingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		277C717C1B4781B1009618E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277C717D1B4781B1009618E5 /* BrewingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrewingTests.m; sourceTree = "<group>"; };
+		277C71871B47918A009618E5 /* BREWHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREWHomeController.h; sourceTree = "<group>"; };
+		277C71881B47918A009618E5 /* BREWHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREWHomeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				277C71631B4781B1009618E5 /* AppDelegate.m */,
 				277C71681B4781B1009618E5 /* ViewController.h */,
 				277C71691B4781B1009618E5 /* ViewController.m */,
+				277C71871B47918A009618E5 /* BREWHomeController.h */,
+				277C71881B47918A009618E5 /* BREWHomeController.m */,
 				277C716B1B4781B1009618E5 /* Main.storyboard */,
 				277C716E1B4781B1009618E5 /* Images.xcassets */,
 				277C71701B4781B1009618E5 /* LaunchScreen.xib */,
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277C71641B4781B1009618E5 /* AppDelegate.m in Sources */,
+				277C71891B47918A009618E5 /* BREWHomeController.m in Sources */,
 				277C71611B4781B1009618E5 /* main.m in Sources */,
 				277C716A1B4781B1009618E5 /* ViewController.m in Sources */,
 				277C71671B4781B1009618E5 /* Brewing.xcdatamodeld in Sources */,
