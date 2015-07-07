@@ -8,7 +8,7 @@
 
 
 #import "ViewController.h"
-#import "HomeController.h"
+#import "BREWHomeController.h"
 
 
 @interface ViewController()
@@ -29,7 +29,6 @@
     
     if (!self.isVisible) {
         self.isVisible = YES;
-        [self.homeViewController show];
     }
 }
 

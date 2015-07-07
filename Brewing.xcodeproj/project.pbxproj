@@ -16,6 +16,9 @@
 		277C71721B4781B1009618E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277C71701B4781B1009618E5 /* LaunchScreen.xib */; };
 		277C717E1B4781B1009618E5 /* BrewingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277C717D1B4781B1009618E5 /* BrewingTests.m */; };
 		277C71891B47918A009618E5 /* BREWHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277C71881B47918A009618E5 /* BREWHomeController.m */; };
+		C875501D1B479443007BD77E /* BREWHopsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C875501C1B479443007BD77E /* BREWHopsController.m */; };
+		C87550221B49F621007BD77E /* BREWHopsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C87550211B49F621007BD77E /* BREWHopsViewModel.m */; };
+		C87550251B49F8F2007BD77E /* BREWHopsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87550241B49F8F2007BD77E /* BREWHopsTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,12 @@
 		277C717D1B4781B1009618E5 /* BrewingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrewingTests.m; sourceTree = "<group>"; };
 		277C71871B47918A009618E5 /* BREWHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREWHomeController.h; sourceTree = "<group>"; };
 		277C71881B47918A009618E5 /* BREWHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREWHomeController.m; sourceTree = "<group>"; };
+		C875501B1B479443007BD77E /* BREWHopsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREWHopsController.h; sourceTree = "<group>"; };
+		C875501C1B479443007BD77E /* BREWHopsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREWHopsController.m; sourceTree = "<group>"; };
+		C87550201B49F621007BD77E /* BREWHopsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BREWHopsViewModel.h; path = Images.xcassets/BREWHopsViewModel.h; sourceTree = "<group>"; };
+		C87550211B49F621007BD77E /* BREWHopsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BREWHopsViewModel.m; path = Images.xcassets/BREWHopsViewModel.m; sourceTree = "<group>"; };
+		C87550231B49F8F2007BD77E /* BREWHopsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREWHopsTableCell.h; sourceTree = "<group>"; };
+		C87550241B49F8F2007BD77E /* BREWHopsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREWHopsTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,8 @@
 		277C715D1B4781B1009618E5 /* Brewing */ = {
 			isa = PBXGroup;
 			children = (
+				C875501F1B49F5DF007BD77E /* Model */,
+				C875501E1B49F434007BD77E /* View */,
 				277C71621B4781B1009618E5 /* AppDelegate.h */,
 				277C71631B4781B1009618E5 /* AppDelegate.m */,
 				277C71681B4781B1009618E5 /* ViewController.h */,
@@ -125,6 +136,26 @@
 				277C717C1B4781B1009618E5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C875501E1B49F434007BD77E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C875501B1B479443007BD77E /* BREWHopsController.h */,
+				C875501C1B479443007BD77E /* BREWHopsController.m */,
+				C87550231B49F8F2007BD77E /* BREWHopsTableCell.h */,
+				C87550241B49F8F2007BD77E /* BREWHopsTableCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C875501F1B49F5DF007BD77E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C87550201B49F621007BD77E /* BREWHopsViewModel.h */,
+				C87550211B49F621007BD77E /* BREWHopsViewModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C87550251B49F8F2007BD77E /* BREWHopsTableCell.m in Sources */,
+				C87550221B49F621007BD77E /* BREWHopsViewModel.m in Sources */,
 				277C71641B4781B1009618E5 /* AppDelegate.m in Sources */,
 				277C71891B47918A009618E5 /* BREWHomeController.m in Sources */,
 				277C71611B4781B1009618E5 /* main.m in Sources */,
 				277C716A1B4781B1009618E5 /* ViewController.m in Sources */,
+				C875501D1B479443007BD77E /* BREWHopsController.m in Sources */,
 				277C71671B4781B1009618E5 /* Brewing.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +462,7 @@
 				277C71831B4781B1009618E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277C71841B4781B1009618E5 /* Build configuration list for PBXNativeTarget "BrewingTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +471,7 @@
 				277C71861B4781B1009618E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
