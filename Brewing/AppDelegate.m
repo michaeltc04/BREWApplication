@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BREWHopsController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UINavigationController *navVC = [[UINavigationController alloc] init];
+    BREWHopsController *hops = [[BREWHopsController alloc] init];
+    [navVC setViewControllers:[NSArray arrayWithObject:hops]];
+    [self.window setRootViewController:navVC];
     return YES;
 }
 
