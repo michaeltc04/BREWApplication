@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Grain" syncable="YES">
+    <entity name="Grain" representedClassName="Grain" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Hop" syncable="YES">
+    <entity name="Hop" representedClassName="Hop" syncable="YES">
         <attribute name="alphaAcid" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="form" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Malt" syncable="YES">
+    <entity name="Malt" representedClassName="Malt" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Recipe" syncable="YES">
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES">
         <attribute name="boilTime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="hopAdditions" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="hopAmount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -25,7 +25,7 @@
         <relationship name="malt" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Malt" syncable="YES"/>
         <relationship name="yeast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Yeast" syncable="YES"/>
     </entity>
-    <entity name="Yeast" syncable="YES">
+    <entity name="Yeast" representedClassName="Yeast" syncable="YES">
         <attribute name="flocculation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="maxAttenuationPercent" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="maxFermentingTemp" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -35,10 +35,10 @@
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Grain" positionX="-2709" positionY="630" width="128" height="58"/>
-        <element name="Hop" positionX="-2673" positionY="983" width="128" height="88"/>
-        <element name="Malt" positionX="-2198" positionY="623" width="128" height="73"/>
-        <element name="Recipe" positionX="-2511" positionY="701" width="128" height="208"/>
-        <element name="Yeast" positionX="-2315" positionY="968" width="128" height="148"/>
+        <element name="Grain" positionX="-2709" positionY="630" width="128" height="60"/>
+        <element name="Hop" positionX="-2673" positionY="983" width="128" height="90"/>
+        <element name="Malt" positionX="-2198" positionY="623" width="128" height="75"/>
+        <element name="Recipe" positionX="-2511" positionY="701" width="128" height="210"/>
+        <element name="Yeast" positionX="-2315" positionY="968" width="128" height="150"/>
     </elements>
 </model>
