@@ -13,7 +13,7 @@
 @interface BREWHomeController : UIViewController
 
 
-//code here
+- (void)show;
 
 
 @end
