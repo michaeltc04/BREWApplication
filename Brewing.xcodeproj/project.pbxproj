@@ -19,6 +19,11 @@
 		C875501D1B479443007BD77E /* BREWHopsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C875501C1B479443007BD77E /* BREWHopsController.m */; };
 		C87550221B49F621007BD77E /* BREWHopsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C87550211B49F621007BD77E /* BREWHopsViewModel.m */; };
 		C87550251B49F8F2007BD77E /* BREWHopsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87550241B49F8F2007BD77E /* BREWHopsTableCell.m */; };
+		277D081B1B53271900C021AF /* Grain.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D081A1B53271900C021AF /* Grain.m */; };
+		277D081E1B53271A00C021AF /* Yeast.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D081D1B53271A00C021AF /* Yeast.m */; };
+		277D08211B53271A00C021AF /* Hop.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D08201B53271A00C021AF /* Hop.m */; };
+		277D08241B53271A00C021AF /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D08231B53271A00C021AF /* Recipe.m */; };
+		277D08271B53271A00C021AF /* Malt.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D08261B53271A00C021AF /* Malt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		C87550211B49F621007BD77E /* BREWHopsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BREWHopsViewModel.m; path = Images.xcassets/BREWHopsViewModel.m; sourceTree = "<group>"; };
 		C87550231B49F8F2007BD77E /* BREWHopsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREWHopsTableCell.h; sourceTree = "<group>"; };
 		C87550241B49F8F2007BD77E /* BREWHopsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREWHopsTableCell.m; sourceTree = "<group>"; };
+		277D08191B53271900C021AF /* Grain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grain.h; sourceTree = "<group>"; };
+		277D081A1B53271900C021AF /* Grain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grain.m; sourceTree = "<group>"; };
+		277D081C1B53271A00C021AF /* Yeast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yeast.h; sourceTree = "<group>"; };
+		277D081D1B53271A00C021AF /* Yeast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Yeast.m; sourceTree = "<group>"; };
+		277D081F1B53271A00C021AF /* Hop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hop.h; sourceTree = "<group>"; };
+		277D08201B53271A00C021AF /* Hop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hop.m; sourceTree = "<group>"; };
+		277D08221B53271A00C021AF /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		277D08231B53271A00C021AF /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		277D08251B53271A00C021AF /* Malt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Malt.h; sourceTree = "<group>"; };
+		277D08261B53271A00C021AF /* Malt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Malt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,7 @@
 		277C71521B4781B1009618E5 = {
 			isa = PBXGroup;
 			children = (
+				277D08281B53273F00C021AF /* ManagedObjects */,
 				277C715D1B4781B1009618E5 /* Brewing */,
 				277C717A1B4781B1009618E5 /* BrewingTests */,
 				277C715C1B4781B1009618E5 /* Products */,
@@ -156,6 +172,21 @@
 				C87550211B49F621007BD77E /* BREWHopsViewModel.m */,
 			);
 			name = Model;
+		277D08281B53273F00C021AF /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				277D08251B53271A00C021AF /* Malt.h */,
+				277D08261B53271A00C021AF /* Malt.m */,
+				277D08221B53271A00C021AF /* Recipe.h */,
+				277D08231B53271A00C021AF /* Recipe.m */,
+				277D081F1B53271A00C021AF /* Hop.h */,
+				277D08201B53271A00C021AF /* Hop.m */,
+				277D081C1B53271A00C021AF /* Yeast.h */,
+				277D081D1B53271A00C021AF /* Yeast.m */,
+				277D08191B53271900C021AF /* Grain.h */,
+				277D081A1B53271900C021AF /* Grain.m */,
+			);
+			name = ManagedObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,12 +291,17 @@
 			files = (
 				C87550251B49F8F2007BD77E /* BREWHopsTableCell.m in Sources */,
 				C87550221B49F621007BD77E /* BREWHopsViewModel.m in Sources */,
+				277D081E1B53271A00C021AF /* Yeast.m in Sources */,
+				277D08241B53271A00C021AF /* Recipe.m in Sources */,
 				277C71641B4781B1009618E5 /* AppDelegate.m in Sources */,
 				277C71891B47918A009618E5 /* BREWHomeController.m in Sources */,
 				277C71611B4781B1009618E5 /* main.m in Sources */,
+				277D08271B53271A00C021AF /* Malt.m in Sources */,
+				277D081B1B53271900C021AF /* Grain.m in Sources */,
 				277C716A1B4781B1009618E5 /* ViewController.m in Sources */,
 				C875501D1B479443007BD77E /* BREWHopsController.m in Sources */,
 				277C71671B4781B1009618E5 /* Brewing.xcdatamodeld in Sources */,
+				277D08211B53271A00C021AF /* Hop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
