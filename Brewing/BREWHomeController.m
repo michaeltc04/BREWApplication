@@ -13,7 +13,13 @@
 @implementation BREWHomeController
 
 
-//code
+- (void)show {
+    [super viewDidLoad];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    view.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:view];
+}
 
 
 //code

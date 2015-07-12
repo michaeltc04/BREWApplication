@@ -8,7 +8,7 @@
 
 
 #import "ViewController.h"
-#import "HomeController.h"
+#import "BREWHomeController.h"
 
 
 @interface ViewController()
@@ -24,14 +24,23 @@
 @implementation ViewController
 
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    view.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:view];
+}
+
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     if (!self.isVisible) {
         self.isVisible = YES;
-        [self.homeViewController show];
+        [self.homeController show];
     }
 }
-
 
 @end
